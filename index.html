@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>games.kstym.ru — сайт в разработке</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: radial-gradient(circle at 50% 0%, #1b2440 0%, #0b0e17 70%);
+    color: #e6e9f0;
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    text-align: center;
+  }
+  .card {
+    max-width: 560px;
+    padding: 40px 32px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 20px;
+    background: rgba(255,255,255,.03);
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    backdrop-filter: blur(6px);
+  }
+  .icon {
+    font-size: 52px;
+    line-height: 1;
+    margin-bottom: 16px;
+    animation: spin 6s linear infinite;
+    display: inline-block;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  h1 { margin: 0 0 12px; font-size: clamp(22px, 5vw, 30px); font-weight: 700; letter-spacing: -.02em; }
+  p { margin: 0; color: #9aa4bd; font-size: clamp(14px, 3.5vw, 16px); }
+  .domain { color: #7aa2ff; font-weight: 600; white-space: nowrap; }
+  footer {
+    font-size: 13px;
+    color: #6b7590;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer a { color: #7aa2ff; text-decoration: none; border-bottom: 1px solid transparent; transition: .2s; }
+  footer a:hover { border-bottom-color: currentColor; }
+  .sep { opacity: .4; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon" aria-hidden="true">⚙️</div>
+    <h1>Сайт находится в разработке</h1>
+    <p>Мы уже работаем над <span class="domain">games.kstym.ru</span>.<br>Совсем скоро здесь появится что-то интересное.</p>
+  </main>
+
+  <footer>
+    <span>© 2026</span>
+    <span class="sep">•</span>
+    <a href="LICENSE.MD">Лицензия</a>
+  </footer>
+</body>
+</html>
