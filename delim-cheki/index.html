@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Делим чеки — расчёт совместных расходов</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧾</text></svg>">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <div class="app-layout">
+    <header class="app-header">
+      <div class="container header-inner">
+        <h1 class="logo">
+          <span class="logo-icon" aria-hidden="true">🧾</span>
+          <span class="logo-text">Делим чеки</span>
+        </h1>
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav-list">
+            <li><a href="#/" class="nav-link active" id="tab-calculator">Калькулятор</a></li>
+            <li><a href="#/events" class="nav-link" id="tab-events">События</a></li>
+            <li><a href="#/settings" class="nav-link" id="tab-settings">Настройки</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="storage-banner" class="storage-banner hidden" role="alert">
+      <div class="container">
+        <span class="banner-text">Не удалось сохранить данные в браузере. Скачайте резервную копию</span>
+      </div>
+    </div>
+
+    <main id="app" class="container main-content" tabindex="-1">
+      <!-- Экраны рендерятся динамически -->
+    </main>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+</body>
+</html>
