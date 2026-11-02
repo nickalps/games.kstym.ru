@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гарантийное обслуживание Энергоса — Care+ Пожизненная гарантия</title>
+  <meta name="description" content="Официальный сервисный центр гарантийного обслуживания Энергоса. Пожизненная гарантия, решение вопросов по повреждениям и бесплатная открытка с соболезнованиями.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  
+  <!-- Early theme initialization to prevent flash -->
+  <script>
+    (function() {
+      try {
+        const key = "nw-theme-preference";
+        const pref = localStorage.getItem(key) || "system";
+        const resolved = (pref === "dark" || pref === "light") 
+          ? pref 
+          : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.dataset.themePreference = pref;
+        document.documentElement.dataset.theme = resolved;
+        document.documentElement.style.colorScheme = resolved;
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Typography: Inter, JetBrains Mono, Literata -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/nw-design-tokens.css">
+  <link rel="stylesheet" href="./css/rofl.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./garantiya.html" class="brand-group" aria-label="Главная страница сервисного центра">
+        <span class="brand-mark" aria-hidden="true">NW</span>
+        <div class="brand-title">
+          <span class="brand-name">NW Energy Care+</span>
+          <span class="brand-sub">games.kstym.ru/rofl</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Навигация по документам">
+        <ul class="nav-links">
+          <li><a href="./offerta.html" class="nav-link">Договор оферты</a></li>
+          <li><a href="./garantiya.html" class="nav-link active" aria-current="page">Гарантийное обслуживание</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="theme-toggle-btn" id="theme-btn" aria-label="Переключить тему оформления">
+        <span id="theme-icon" aria-hidden="true">🌓</span>
+        <span id="theme-label">Тема</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-main">
+    <div class="container">
+      
+      <!-- Hero section -->
+      <section class="doc-hero">
+        <div class="doc-meta-badge-row">
+          <span class="badge badge-success">● Сервисный центр ONLINE</span>
+          <span class="badge badge-info">Care+ Пожизненная гарантия</span>
+          <span class="badge badge-warning">Бесплатные открытки</span>
+        </div>
+        
+        <h1 class="doc-title">Центр гарантийного обслуживания «Энергос Care+»</h1>
+        <p class="doc-lead">
+          Пожизненная гарантия на каждую каплю бодрости. Если что-то помялось, не доехало или вы внезапно ощутили притяжение санузла — мы здесь, чтобы оперативно решить вопрос.
+        </p>
+      </section>
+
+      <!-- Three Pillars Grid -->
+      <section class="cards-grid" aria-label="Ключевые принципы сервиса">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🛍️</div>
+          <h3>Энергос мы доставляем в пакете</h3>
+          <p>
+            Каждая банка упакована в фирменный полиэтиленовый пакет. Он защищает напиток от механических воздействий, пыли и взглядов завистников.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🛡️</div>
+          <h3>Все грузы застрахованы</h3>
+          <p>
+            Полное покрытие рисков падения пакета, турбулентности при ходьбе и непредвиденных обстоятельств. Ваш энергос под надёжной защитой.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⚖️</div>
+          <h3>Закон о защите прав потребителей</h3>
+          <p>
+            Также действует закон о защите прав потребителей РФ. Ваши права священны, а наши специалисты всегда готовы выслушать ваши переживания.
+          </p>
+        </div>
+      </section>
+
+      <!-- Urgent Dispatch Callout -->
+      <section class="callout callout-info" role="region" aria-label="Регламент при повреждениях">
+        <span class="callout-icon" aria-hidden="true">📸</span>
+        <div class="callout-content">
+          <strong>Порядок действий при повреждениях или недостаче:</strong>
+          Если вдруг что-то пришло с повреждениями или чего-то не хватает, Вы пишите/звоните нам, отправляете фото, мы оперативно решим вопрос. Мы не задаём лишних вопросов, а сразу приступаем к делу.
+        </div>
+      </section>
+
+      <!-- Interactive Claim Diagnostic Calculator -->
+      <section class="interactive-panel" id="claim-calculator">
+        <h2 class="panel-title">Онлайн-диагностика гарантийного случая</h2>
+        <p class="panel-desc">
+          Выберите характер инцидента, чтобы определить применимость гарантии согласно <a href="./offerta.html">Договору оферты</a>.
+        </p>
+
+        <form id="warranty-form" onsubmit="return false;">
+          
+          <!-- Step 1: Issue type -->
+          <div class="form-group">
+            <label class="form-label">1. Что произошло с вашим Энергосом?</label>
+            <div class="radio-tiles">
+              <label class="radio-tile-label">
+                <input type="radio" name="issue" value="damaged" checked>
+                <span class="radio-tile-title">Помята банка</span>
+                <span class="radio-tile-desc">Деформация алюминиевого корпуса при доставке в пакете</span>
+              </label>
+
+              <label class="radio-tile-label">
+                <input type="radio" name="issue" value="missing">
+                <span class="radio-tile-title">Чего-то не хватает</span>
+                <span class="radio-tile-desc">Недолив, отсутствие газа или в пакете пусто</span>
+              </label>
+
+              <label class="radio-tile-label">
+                <input type="radio" name="issue" value="stomach">
+                <span class="radio-tile-title">Сорвало дно ⚡</span>
+                <span class="radio-tile-desc">Экстренный реактивный импульс в сторону унитаза</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2: Food history (dynamic check) -->
+          <div class="form-group" id="food-history-group">
+            <label class="form-label" for="food-select">
+              2. Экспресс-экспертиза: что вы ещё ели за последние 24 часа?
+            </label>
+            <select class="form-control" id="food-select">
+              <option value="shawarma">Шаурму на вокзале с двойным соусом</option>
+              <option value="belyash">Беляш из привокзального ларька</option>
+              <option value="pelmeni">Жареные пельмени в масле в 3 часа ночи</option>
+              <option value="mayo">Майонезный салат трёхдневной выдержки</option>
+              <option value="water">Попил холодной воды сразу после горячего супа</option>
+              <option value="nothing">Абсолютно ничего, питался святым духом</option>
+            </select>
+            <div class="form-helper">
+              Необходимо для сверки с п. 4.2 Оферты («Если просрётесь — значит чё-то ещё съели»).
+            </div>
+          </div>
+
+          <!-- Step 3: Photo upload mock -->
+          <div class="form-group">
+            <label class="form-label">3. Фотофиксация инцидента</label>
+            <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Прикрепить фото повреждений или чека">
+              <div class="dropzone-icon" aria-hidden="true">📷</div>
+              <div class="dropzone-text" id="dropzone-label">Нажмите или перетащите сюда фото повреждённой банки / пакета</div>
+              <div class="dropzone-sub">Поддерживаются форматы JPG, PNG, WEBP и скриншоты душевных страданий</div>
+              <input type="file" id="file-input" style="display: none;" accept="image/*">
+            </div>
+            <div id="file-preview-name" class="form-helper" style="color: var(--ds-action); font-weight: 500; display: none;"></div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-block" id="check-claim-btn">
+            ⚡ Рассмотреть рекламацию и оперативно решить вопрос
+          </button>
+        </form>
+
+        <!-- Verdict Result Container -->
+        <div id="verdict-container" style="display: none;"></div>
+      </section>
+
+      <!-- Signature Condolence Postcard Generator -->
+      <section class="interactive-panel" id="postcard-section">
+        <div class="doc-meta-badge-row">
+          <span class="badge badge-warning">Премиальный сервис</span>
+          <span class="badge badge-info">100% Бесплатно</span>
+        </div>
+        <h2 class="panel-title">Бесплатно пошлём открытку с соболезнованиями</h2>
+        <p class="panel-desc">
+          Если у вас сорвало дно или вечер пошёл не по плану — наша сервисная служба не бросит вас в беде. Мы напечатаем и абсолютно <strong>бесплатно пошлём открытку с соболезнованиями</strong> Почтой России прямо к вашей двери.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--ds-space-6);">
+          <!-- Controls -->
+          <div>
+            <div class="form-group">
+              <label class="form-label" for="recipient-name">Имя пострадавшего (или позывной у фаянса):</label>
+              <input type="text" class="form-control" id="recipient-name" value="Николай" placeholder="Например: Николай или Великий Страдалец">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="condolence-template">Текст соболезнования:</label>
+              <select class="form-control" id="condolence-template">
+                <option value="1">«Держись, друг! Санфаянс всё стерпит, а энергос не виноват.»</option>
+                <option value="2">«Мы искренне скорбим о твоих грандиозных планах на этот вечер.»</option>
+                <option value="3">«Если просрался — значит, виновата та шаурма. Скорейшего восстановления!»</option>
+                <option value="4">«Белый трон принял тебя как родного. Мы шлём лучи поддержки и 3-слойную бумагу.»</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="recipient-address">Почтовый индекс и адрес доставки:</label>
+              <input type="text" class="form-control" id="recipient-address" placeholder="г. Москва, ул. Терпения, д. 4, кв. 10">
+              <div class="form-helper">Доставка осуществляется Почтой России (сроки: от 2 недель до вечности).</div>
+            </div>
+
+            <button type="button" class="btn btn-accent btn-block" id="send-postcard-btn">
+              ✉️ Отправить открытку Почтой России (Бесплатно)
+            </button>
+          </div>
+
+          <!-- Live Postcard Preview -->
+          <div class="postcard-wrapper">
+            <div class="postcard-card">
+              <div class="postcard-stamp-mark" aria-hidden="true">
+                <span>ПОЧТА</span>
+                <span style="font-size: 16px; margin: 2px 0;">⚡</span>
+                <span>РОФЛ 0₽</span>
+              </div>
+              <div class="postcard-header">Открытка с соболезнованиями</div>
+              <div class="postcard-body" id="preview-text">
+                «Дорогой Николай!<br><br>Держись, друг! Санфаянс всё стерпит, а энергос не виноват. Помни: за каждым срывом дна наступает светлое утро и тишина в животе.»
+              </div>
+              <div class="postcard-footer">
+                <div>
+                  <strong>Отдел Заботы Энергос Care+</strong><br>
+                  <span style="font-size: 11px;">Гарантийный талон № 228-СОБОЛЕЗНУЮ</span>
+                </div>
+                <div style="font-family: var(--ds-font-code); font-size: 11px;">
+                  ПАКЕТ ДОСТАВЛЕН
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="interactive-panel">
+        <h2 class="panel-title">Часто задаваемые вопросы (FAQ)</h2>
+        <p class="panel-desc">Ответы на ключевые вопросы по доставке, страховке и биологической защите.</p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Почему энергос доставляется именно в пакете?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Пакет — это идеальный баланс между аэродинамикой и конфиденциальностью. Он защищает банку от солнечных лучей, скрывает вашу страсть к таурину от соседей и гарантирует, что если банка вспотеет, ваши джинсы останутся сухими.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Как работает страхование всех грузов?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Все грузы застрахованы на 100%. Если курьер споткнётся и банка деформируется, вы отправляете нам фото, мы оперативно рассматриваем вопрос и либо одобряем новую банку, либо восхищаемся прочностью сплава.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Что делать, если мне кажется, что сорвало дно именно от энергоса?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Согласно ст. 4.2 Оферты («Если просрётесь — значит чё-то ещё съели!»), энергос априори невиновен. Вспомните шаурму, майонез или вчерашние пельмени. Однако наша пожизненная гарантия включает бесплатную отправку открытки с соболезнованиями!
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Как действует закон о защите прав потребителей?</span>
+              <span class="faq-icon" aria-hidden="true">▼</span>
+            </button>
+            <div class="faq-answer">
+              Действует в полном объёме согласно законам РФ. Если товар имеет заводской брак до вскрытия — мы решим вопрос. Если энергос уже выпит, вернуть его обратно технологически невозможно.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Call to action -->
+      <section class="cta-banner">
+        <div>
+          <h2 class="cta-title">Остались вопросы по условиям договора?</h2>
+          <p class="cta-sub">Ознакомьтесь с полным текстом публичной оферты на поставку и употребление.</p>
+        </div>
+        <a href="./offerta.html" class="btn btn-secondary">
+          Читать договор оферты &rarr;
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span>© 2026 NW Unified Design System • games.kstym.ru/rofl</span>
+        <div style="font-size: 12px; margin-top: 4px; opacity: 0.8;">
+          Сервис носит исключительно развлекательный характер. Пейте энергосы умеренно и держите туалетную бумагу наготове.
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="./offerta.html">Оферта</a></li>
+        <li><a href="./garantiya.html">Гарантия</a></li>
+        <li><a href="https://games.kstym.ru">games.kstym.ru</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-msg" role="status" aria-live="polite">
+    <span id="toast-icon">⚡</span>
+    <span id="toast-text">Действие выполнено</span>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script type="module">
+    import { initTheme, setThemePreference } from "./js/nw-theme.js";
+
+    // Initialize Theme Controller
+    initTheme();
+
+    const themeBtn = document.getElementById("theme-btn");
+    const themeIcon = document.getElementById("theme-icon");
+    const themeLabel = document.getElementById("theme-label");
+
+    function updateThemeUI() {
+      const currentPref = document.documentElement.dataset.themePreference || "system";
+      if (currentPref === "system") {
+        themeLabel.textContent = "Авто";
+        themeIcon.textContent = "🌓";
+      } else if (currentPref === "dark") {
+        themeLabel.textContent = "Тёмная";
+        themeIcon.textContent = "🌙";
+      } else {
+        themeLabel.textContent = "Светлая";
+        themeIcon.textContent = "☀️";
+      }
+    }
+
+    updateThemeUI();
+
+    themeBtn.addEventListener("click", () => {
+      const currentPref = document.documentElement.dataset.themePreference || "system";
+      const nextPref = currentPref === "system" ? "light" : currentPref === "light" ? "dark" : "system";
+      setThemePreference(nextPref);
+      updateThemeUI();
+      showToast("Тема переключена: " + themeLabel.textContent);
+    });
+
+    // File Mock Dropzone logic
+    const dropzone = document.getElementById("dropzone");
+    const fileInput = document.getElementById("file-input");
+    const dropzoneLabel = document.getElementById("dropzone-label");
+    const previewName = document.getElementById("file-preview-name");
+
+    dropzone.addEventListener("click", () => fileInput.click());
+    dropzone.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        fileInput.click();
+      }
+    });
+
+    fileInput.addEventListener("change", (e) => {
+      if (e.target.files.length > 0) {
+        const file = e.target.files[0];
+        dropzoneLabel.textContent = "✅ Фото прикреплено: " + file.name;
+        previewName.textContent = `Размер: ${(file.size / 1024).toFixed(1)} КБ. Экспертная комиссия готова к изучению.`;
+        previewName.style.display = "block";
+        showToast("Фото успешно добавлено к обращению!");
+      }
+    });
+
+    // Claim Check Diagnostic Logic
+    const checkClaimBtn = document.getElementById("check-claim-btn");
+    const verdictContainer = document.getElementById("verdict-container");
+
+    checkClaimBtn.addEventListener("click", () => {
+      const selectedIssue = document.querySelector('input[name="issue"]:checked').value;
+      const foodSelect = document.getElementById("food-select");
+      const foodText = foodSelect.options[foodSelect.selectedIndex].text;
+      
+      let html = "";
+      if (selectedIssue === "stomach") {
+        html = `
+          <div class="claim-result-box callout callout-danger" style="margin-top: var(--ds-space-6);">
+            <span class="callout-icon">🚨</span>
+            <div class="callout-content">
+              <strong>ВЕРДИКТ КОМИССИИ: В ГАРАНТИЙНОМ ВОЗМЕЩЕНИИ ОТКАЗАНО!</strong>
+              <p style="margin: 6px 0 8px;">
+                <strong>Основание:</strong> Пункт 4.2 Оферты (<em>«Если просрётесь — значит чё-то ещё съели!»</em>).
+              </p>
+              <p style="margin: 0 0 8px;">
+                В ходе биохимического расследования установлен факт употребления: <strong>«${foodText}»</strong>. 
+                Энергос признан кристально невиновным, а ответственность возлагается на вашу гастрономическую смелость!
+              </p>
+              <div style="background: var(--ds-surface); border: 1px solid var(--ds-border); border-radius: var(--ds-radius-control); padding: 12px; margin-top: 8px;">
+                <strong style="color: var(--ds-action);">🎁 НО ВАМ ПОЛОЖЕНА КОМПЕНСАЦИЯ:</strong>
+                По условиям сервиса Care+, мы <strong>бесплатно пошлём вам открытку с соболезнованиями</strong>! Заполните форму ниже.
+              </div>
+            </div>
+          </div>
+        `;
+      } else if (selectedIssue === "damaged") {
+        html = `
+          <div class="claim-result-box callout callout-success" style="margin-top: var(--ds-space-6);">
+            <span class="callout-icon">✅</span>
+            <div class="callout-content">
+              <strong>ВОПРОС ОПЕРАТИВНО РЕШЁН!</strong>
+              <p style="margin: 6px 0;">
+                Спасибо, что прислали фото! Так как <strong>энергос мы доставляем в пакете</strong> и <strong>все грузы застрахованы</strong>, ситуация находится под контролем.
+              </p>
+              <p style="margin: 0;">
+                Экспертиза подтвердила: вмятина на банке имеет благородное происхождение и улучшает сцепление с ладонью на 14.8%. Функционал сохранён. Если вы всё же недовольны — свяжитесь с нами, и мы вышлем новую банку!
+              </p>
+            </div>
+          </div>
+        `;
+      } else {
+        html = `
+          <div class="claim-result-box callout callout-info" style="margin-top: var(--ds-space-6);">
+            <span class="callout-icon">🔍</span>
+            <div class="callout-content">
+              <strong>ЗАЯВКА ПРИНЯТА В ОПЕРАТИВНУЮ ОБРАБОТКУ!</strong>
+              <p style="margin: 6px 0;">
+                Чего-то не хватает? Наш детективный отдел уже опрашивает курьера с пристрастием. Действует <strong>закон о защите прав потребителей</strong>: мы дольём недостающие миллилитры бодрости или дошлём дополнительный пакет!
+              </p>
+            </div>
+          </div>
+        `;
+      }
+
+      verdictContainer.innerHTML = html;
+      verdictContainer.style.display = "block";
+      verdictContainer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      showToast("Рекламация успешно обработана!");
+    });
+
+    // Condolence Postcard Live Update Logic
+    const recipientInput = document.getElementById("recipient-name");
+    const templateSelect = document.getElementById("condolence-template");
+    const previewText = document.getElementById("preview-text");
+    const sendPostcardBtn = document.getElementById("send-postcard-btn");
+
+    function updatePostcardPreview() {
+      const name = recipientInput.value.trim() || "Друг";
+      const choice = templateSelect.value;
+      let text = "";
+
+      if (choice === "1") {
+        text = `«Дорогой ${name}!<br><br>Держись, друг! Санфаянс всё стерпит, а энергос не виноват. Помни: за каждым срывом дна наступает светлое утро и тишина в животе.»`;
+      } else if (choice === "2") {
+        text = `«Уважаемый ${name}!<br><br>Мы искренне скорбим о твоих грандиозных планах на этот вечер. Пусть туалетная бумага будет мягкой, как облако, а заряд телефона на троне не иссякнет.»`;
+      } else if (choice === "3") {
+        text = `«Брат по бодрости ${name}!<br><br>Если просрался — значит, виновата та шаурма. Энергос чист перед совестью. Поправляйся скорее, мы мысленно держим тебя за руку.»`;
+      } else {
+        text = `«Герой нашего времени ${name}!<br><br>Белый трон принял тебя как родного. Мы шлём лучи поддержки, сочувствия и бесконечный рулон 3-слойной заботы!»`;
+      }
+
+      previewText.innerHTML = text;
+    }
+
+    recipientInput.addEventListener("input", updatePostcardPreview);
+    templateSelect.addEventListener("change", updatePostcardPreview);
+
+    sendPostcardBtn.addEventListener("click", () => {
+      const address = document.getElementById("recipient-address").value.trim();
+      const name = recipientInput.value.trim() || "Пострадавшему";
+      
+      sendPostcardBtn.disabled = true;
+      sendPostcardBtn.textContent = "⏳ Оформляем бандероль в Почте России...";
+
+      setTimeout(() => {
+        sendPostcardBtn.disabled = false;
+        sendPostcardBtn.textContent = "✉️ Отправить открытку Почтой России (Бесплатно)";
+        
+        const trackNum = "RU-ROFL-" + Math.floor(100000 + Math.random() * 900000) + "-SOS";
+        alert(`📬 ОТКРЫТКА С СОБОЛЕЗНОВАНИЯМИ УСПЕШНО ОТПРАВЛЕНА!\n\nПолучатель: ${name}\nАдрес: ${address || "До востребования у белого трона"}\nТрек-номер: ${trackNum}\n\nСрок доставки: от 14 до 90 рабочих дней. Держитесь!`);
+        showToast("Открытка передана в службу доставки!");
+      }, 900);
+    });
+
+    // FAQ Accordion logic
+    const faqItems = document.querySelectorAll(".faq-item");
+    faqItems.forEach(item => {
+      const btn = item.querySelector(".faq-question");
+      btn.addEventListener("click", () => {
+        const isOpen = item.classList.contains("open");
+        faqItems.forEach(i => i.classList.remove("open"));
+        if (!isOpen) {
+          item.classList.add("open");
+        }
+      });
+    });
+
+    // Toast helper
+    const toast = document.getElementById("toast");
+    let toastTimeout;
+    function showToast(message) {
+      document.getElementById("toast-text").textContent = message;
+      toast.classList.add("show");
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
