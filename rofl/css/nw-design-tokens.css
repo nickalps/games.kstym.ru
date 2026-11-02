@@ -1,0 +1,173 @@
+/* NW Unified Design System — semantic tokens
+   Set data-theme="light" or data-theme="dark" on <html>.
+   Resolve "system" to light/dark before first paint in application bootstrap.
+*/
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --ds-bg: #F6F7F9;
+  --ds-surface: #FFFFFF;
+  --ds-surface-raised: #FFFFFF;
+  --ds-surface-sunken: #EEF1F5;
+  --ds-media-mat: #E9ECF1;
+
+  --ds-text: #171B22;
+  --ds-text-secondary: #454D5A;
+  --ds-text-muted: #5F6876;
+  --ds-text-disabled: #858D99;
+
+  --ds-border: #E0E5EB;
+  --ds-border-strong: #B7C0CC;
+
+  --ds-action: #3159D8;
+  --ds-action-hover: #2547B9;
+  --ds-on-action: #FFFFFF;
+  --ds-action-soft: #E9EEFF;
+  --ds-accent: #B74E2D;
+  --ds-accent-soft: #FCEDE7;
+  --ds-focus: #3159D8;
+
+  --ds-success: #176B45;
+  --ds-success-soft: #E7F6EE;
+  --ds-warning: #8A4B08;
+  --ds-warning-soft: #FFF4D8;
+  --ds-danger: #B42318;
+  --ds-danger-soft: #FDECEA;
+  --ds-info: #195DAD;
+  --ds-info-soft: #EAF3FF;
+
+  --ds-overlay: rgb(16 22 33 / 0.42);
+  --ds-shadow-1: 0 1px 2px rgb(17 24 39 / 0.06), 0 1px 3px rgb(17 24 39 / 0.04);
+  --ds-shadow-2: 0 8px 24px rgb(17 24 39 / 0.12), 0 2px 6px rgb(17 24 39 / 0.06);
+  --ds-shadow-3: 0 20px 48px rgb(17 24 39 / 0.18);
+
+  --ds-font-ui: Inter, "Segoe UI", Arial, sans-serif;
+  --ds-font-code: "JetBrains Mono", Consolas, monospace;
+  --ds-font-display: Literata, Georgia, serif;
+
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 20px;
+  --ds-space-6: 24px;
+  --ds-space-8: 32px;
+  --ds-space-10: 40px;
+  --ds-space-12: 48px;
+  --ds-space-16: 64px;
+  --ds-space-24: 96px;
+
+  --ds-radius-xs: 4px;
+  --ds-radius-sm: 6px;
+  --ds-radius-control: 8px;
+  --ds-radius-card: 12px;
+  --ds-radius-xl: 16px;
+  --ds-radius-2xl: 24px;
+  --ds-radius-pill: 999px;
+
+  --ds-motion-fast: 120ms;
+  --ds-motion-standard: 180ms;
+  --ds-motion-emphasis: 240ms;
+  --ds-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ds-ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --ds-bg: #0F1115;
+  --ds-surface: #171A21;
+  --ds-surface-raised: #1D222B;
+  --ds-surface-sunken: #0B0D11;
+  --ds-media-mat: #222733;
+
+  --ds-text: #EEF2F7;
+  --ds-text-secondary: #B7C0CE;
+  --ds-text-muted: #939EAE;
+  --ds-text-disabled: #697383;
+
+  --ds-border: #2A303B;
+  --ds-border-strong: #4A5565;
+
+  --ds-action: #A9BCFF;
+  --ds-action-hover: #BDCAFF;
+  --ds-on-action: #101726;
+  --ds-action-soft: #222B43;
+  --ds-accent: #FF9A76;
+  --ds-accent-soft: #35231E;
+  --ds-focus: #A9BCFF;
+
+  --ds-success: #70D6A4;
+  --ds-success-soft: #173127;
+  --ds-warning: #F7C66A;
+  --ds-warning-soft: #382C16;
+  --ds-danger: #FF938B;
+  --ds-danger-soft: #3A2021;
+  --ds-info: #85BDFF;
+  --ds-info-soft: #1C2D44;
+
+  --ds-overlay: rgb(0 0 0 / 0.64);
+  --ds-shadow-1: 0 1px 2px rgb(0 0 0 / 0.2);
+  --ds-shadow-2: 0 8px 24px rgb(0 0 0 / 0.32), 0 2px 6px rgb(0 0 0 / 0.2);
+  --ds-shadow-3: 0 20px 48px rgb(0 0 0 / 0.48);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--ds-bg);
+  color: var(--ds-text);
+}
+
+body {
+  margin: 0;
+  background: var(--ds-bg);
+  color: var(--ds-text);
+  font-family: var(--ds-font-ui);
+  font-size: 16px;
+  line-height: 1.5;
+  font-variant-numeric: proportional-nums;
+  text-rendering: optimizeLegibility;
+}
+
+code,
+kbd,
+pre,
+.s-ds-code {
+  font-family: var(--ds-font-code);
+  font-variant-numeric: tabular-nums;
+}
+
+.s-ds-display {
+  font-family: var(--ds-font-display);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.s-ds-money,
+.s-ds-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ds-focus);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--ds-action-soft);
+  color: var(--ds-text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
