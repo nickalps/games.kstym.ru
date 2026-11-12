@@ -1,0 +1,162 @@
+[
+  {
+    "id": "01-playrix",
+    "title": "Клуб открытий",
+    "style": "Inspired by Playrix Wildscapes / Homescapes / Township UI craft: warm friendly polished 2D casual game illustration, tactile rounded thick frames, soft beveled pill buttons, rich hand-painted gradients, large readable rounded lettering. ORIGINAL setting: friends meeting in a sunlit neighborhood discovery club, a restored glass-roofed museum conservatory with plants and curiosity cabinets. Original small red-panda curator mascot. Cream paper surfaces, turquoise and leaf green, coral positive accents, warm amber; inviting adult-friendly sophistication not babyish. Desktop environment airy and painterly, panels clean light surfaces. Mobile uses bright cream background, very legible dark text and oversized green primary CTA. Strong distinction from all dark science-fiction directions. Working title exact: КЛУБ ОТКРЫТИЙ.",
+    "number": 1,
+    "setting": "Уютный клуб исследователей",
+    "summary": "Объёмный casual UI, кремовые панели, зелёные кнопки, панда-куратор.",
+    "tag": "Тёплый",
+    "batch": "Референсы"
+  },
+  {
+    "id": "02-bg3",
+    "title": "Архив искателей",
+    "style": "Inspired by Baldurs Gate 3: premium mature painterly fantasy, dark polished wood and deep aubergine panels, antique brass filigree used sparingly at corners, parchment inserts, restrained serif headers and clear sans-serif body, amber candlelight. ORIGINAL setting: a magical archive whose scholarly adventurers examine stories from all worlds, no old dungeon/wizard reuse. Original small ink raven archivist as narrator. Background grand library, orbiting manuscript fragments. UI must feel luxurious and tactile, not tiny ornate unreadable RPG inventory. Mobile clean parchment cards and strong dark filled CTA. No dice rolls, stats or added fantasy mechanics. Working title exact: АРХИВ ИСКАТЕЛЕЙ.",
+    "number": 2,
+    "setting": "Магический архив",
+    "summary": "Тёмное дерево, пергамент, тонкая латунь, ворон-архивариус.",
+    "tag": "Атмосферный",
+    "batch": "Референсы"
+  },
+  {
+    "id": "03-cyberpunk",
+    "title": "Нейросигнал",
+    "style": "Inspired by Cyberpunk 2077 visual UI: graphic asymmetric angular modular panels, charcoal/ink surfaces, restrained signal yellow, sharp red and electric cyan, micro-lines and editorial condensed headings, clear large body text. ORIGINAL setting: friends on a pirate trivia broadcast in a nocturnal neon megacity; knowledge as intercepted transmissions, not combat or hacking mechanics. Original abstract waveform presenter icon/AI signal, city glimpsed through rain behind opaque legible panels. Small glitch edges only as decoration, NO scanline interference across readable text. Mobile bold flat graphic cyber-terminal, not busy HUD. NO yellow licensed logo lettering or familiar characters. Working title exact: НЕЙРОСИГНАЛ.",
+    "number": 3,
+    "setting": "Пиратский эфир мегаполиса",
+    "summary": "Угловатые терминалы, чёрный фон, красный, жёлтый и циан.",
+    "tag": "Графичный",
+    "batch": "Референсы"
+  },
+  {
+    "id": "04-rivals",
+    "title": "Лига умов",
+    "style": "Inspired by Marvel Rivals: energetic contemporary stylized comic-book hero-shooter UI art direction, bold editorial type, skewed navy panels, cream/white space, punchy electric yellow and vivid violet, halftone shadows and hand-painted 3D comic accents. ORIGINAL setting: a televised festival of wit in a colorful invented metropolis, contestants ordinary people with visually heroic presentation, original cheerful announcer wearing a jacket with abstract star pin, NOT a Marvel character. Large cropped original announcer in lobby only, question stays clean. Dynamic diagonals but stable horizontal reading and clear mobile hierarchy. No combat, hero abilities, ranks beyond quiz score, team-based mechanics. Working title exact: ЛИГА УМОВ.",
+    "number": 4,
+    "setting": "Фестиваль интеллектуального шоу",
+    "summary": "Комиксная пластика, диагонали, крупные акценты и ведущая.",
+    "tag": "Яркий",
+    "batch": "Референсы"
+  },
+  {
+    "id": "05-everspace",
+    "title": "Дальний сигнал",
+    "style": "Inspired by Everspace 2: cinematic space exploration with precise clear sci-fi panels, cool navy and desaturated slate, luminous cyan and restrained warm amber, clean thin rules and generously spaced typographic hierarchy, restrained glass with opaque text backplates. ORIGINAL setting: an independent interstellar survey crew exchanging knowledge across a distant relay station, luminous nebula and small original survey craft beyond panoramic windows. Original tiny spherical survey drone narrator. NOT cyberpunk neon/grunge, no red dominant warnings, no tiny pilot cockpit instrumentation. Mobile feels elegant scientific field terminal. No ship equipment, weapons, fuel or navigation mechanics. Working title exact: ДАЛЬНИЙ СИГНАЛ.",
+    "number": 5,
+    "setting": "Межзвёздная экспедиция",
+    "summary": "Панорамные окна, спокойные синие панели, янтарные действия.",
+    "tag": "Атмосферный",
+    "batch": "Референсы"
+  },
+  {
+    "id": "06-satisfactory",
+    "title": "Бюро находок",
+    "style": "Inspired by Satisfactory: utilitarian retrofuturistic industrial design, excellent information organization, orange enamel labels, ivory and pale grey panels, graphite typography, sparse hazard stripes only on framing, technical grid and small indexing numbers, crisp squared modular components with tiny bevel. ORIGINAL setting: a slightly humorous field research bureau on a lush alien planet; a shared knowledge check in a bright expedition office. Original friendly boxy survey robot narrator. Environment lush alien cliffs, trees and an orderly research cabin; UI light and functional, not space combat, not a factory production game. Orange is used on main action, cyan on time, dusty green on confirmation. No conveyor belts/resource counters/crafting. Working title exact: БЮРО НАХОДОК.",
+    "number": 6,
+    "setting": "Исследовательское бюро",
+    "summary": "Светлые технические панели, оранжевые ярлыки, робот-помощник.",
+    "tag": "Графичный",
+    "batch": "Референсы"
+  },
+  {
+    "id": "07-detective",
+    "title": "Дело в деталях",
+    "style": "ORIGINAL ART DIRECTION: analog detective editorial UI, a 1930s private investigation bureau. Warm manila dossiers, off-white paper, ink black typography, muted oxblood tabs, restrained mustard and blue pencil accents. Panels are precisely aligned case folders, answers like evidence labels with large typography. Rubber stamps, paper clips and red thread decorate margins ONLY, not content. Board title ДЕЛО В ДЕТАЛЯХ. Original narrator a small observant middle-aged woman detective in simple coat, tasteful ink illustration. Desktop looks like a desk of coordinated case files, mobile like an elegant pocket notebook. Hand printed editorial diagrams of planets in margins. Mature charming mystery, not horror, no guns or crimes pictured. Not fantasy parchment/gold ornament; flat print textures and bureaucratic labels.",
+    "number": 7,
+    "setting": "Детективное бюро",
+    "summary": "Бумажные досье, вкладки, штампы и рисованные улики по краям.",
+    "tag": "Тактильный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "08-television",
+    "title": "Большой эфир",
+    "style": "ORIGINAL ART DIRECTION: glamorous 1970s live television quiz studio. Burnt orange, plum, cream, warm bulbs, restrained chrome. Large rounded rectangular panels with distinctive analog broadcast switches and chunky oblong buttons, geometric mid-century title typography, supersized clean sans body text. Title БОЛЬШОЙ ЭФИР. Stage set with concentric arches and original retro geometric owl channel emblem, no humanoid mascot required. Tasteful slight film grain in backdrop only; UI is sharp. Lobby resembles contestant green room, question is televised round, mobile resembles flat graphic studio cue card, not physical device photo. Analog timer bar not clockwork. No fake currency/prizes/spin wheels. Not neon cyberpunk or glossy mobile casual.",
+    "number": 8,
+    "setting": "Телешоу семидесятых",
+    "summary": "Сценические арки, лампы, хром и крупные аналоговые кнопки.",
+    "tag": "Яркий",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "09-underwater",
+    "title": "Тихая глубина",
+    "style": "ORIGINAL ART DIRECTION: tranquil undersea naturalist station, retro oceanographic expedition. Seafoam green, oxidized copper, chalk ivory, midnight teal; rust-red small accents. Brushed enamel panels with rounded port-like corners, elegant large navy sans text, fine depth-contour line illustrations. Thick opaque light panels guarantee readable text. Very restrained glass on environmental window only. Title ТИХАЯ ГЛУБИНА. Backdrop kelp, manta silhouettes and a submerged observatory, original small brass-and-ceramic diving bell narrator. Mobile clean ivory field notebook with seafoam borders. No oxygen, depth survival gauges, submarine combat or currency. NOT blue outer-space HUD, no neon. High-end marine museum exhibit feel.",
+    "number": 9,
+    "setting": "Подводная обсерватория",
+    "summary": "Морская эмаль, медь, светлые поверхности и линейная графика.",
+    "tag": "Атмосферный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "10-music",
+    "title": "На одной волне",
+    "style": "ORIGINAL ART DIRECTION: contemporary independent music club and record-shop community quiz, tactile risograph concert poster UI. Off-white, saturated tomato red, ink black, ultramarine, small apricot areas. Very bold condensed type headlines, screenprinted grain ONLY on art, flat high-contrast UI panels, chunky typographic answer strips, ticket-shaped participant cards. Title НА ОДНОЙ ВОЛНЕ. Original narrator a playful abstract dancing soundwave with headphones, spare geometric illustrations of vinyl records and microphone in margins. Mobile looks like a clear editorial gig programme with one strong red answer button, no imitation music app. A quiz about ANY topic, not rhythm mechanics; no beat lanes/audio waveform answer puzzle. Urban social and energetic, not superheroes, no neon or sci-fi.",
+    "number": 10,
+    "setting": "Музыкальный клуб",
+    "summary": "Ризографическая афиша, билетные карточки, красный и ультрамарин.",
+    "tag": "Графичный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "11-minimal",
+    "title": "Без рамок",
+    "style": "ORIGINAL ART DIRECTION: radically minimal Swiss editorial / contemporary design museum identity. Pure warm white, black typography, one assertive cobalt accent, microscopic use of muted lime only for status. Extremely spacious grid, asymmetrical typography but stable screen structure, hairline dividers, no textures, no gradients, no bevels, no decorative frames. Title БЕЗ РАМОК in beautiful large modern Cyrillic grotesk. Big numerals, round avatar initials instead of character portraits. Background occasional flat abstract geometric planetary forms only outside text. Mobile maximal readability, input underline or thin border, big cobalt button. No mascot, no scenic illustration, no glass. This is still a welcoming polished premium GAME, not a spreadsheet or generic SaaS dashboard. Distinctive visual rhythm and clear hierarchy.",
+    "number": 11,
+    "setting": "Современная галерея",
+    "summary": "Белый фон, крупная типографика, кобальт; без персонажа и декораций.",
+    "tag": "Минималистичный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "12-tea",
+    "title": "Чайные истории",
+    "style": "ORIGINAL ART DIRECTION: quiet illustrated Japanese-inspired neighborhood tea house hosting a knowledge club. Contemporary woodblock print sensibility, ink outlines, restrained washi paper grain, dusty sage, warm rice white, persimmon, deep ink indigo. Title ЧАЙНЫЕ ИСТОРИИ. Flat graphic wooden lattice details, elegant restrained horizontal label panels, rounded-square persimmon action buttons. Original narrator a calm woman tea-shop owner in contemporary apron, no animal mascot. Plants, kettle, rainy garden silhouettes frame corners. Mobile clean ivory paper reading surface. Avoid faux Japanese glyphs, all real UI Russian, no sushi stereotypes. No tea crafting/sales/currency mechanics. NOT glossy Playrix or fantasy parchment: flat poetic printmaking with generous whitespace.",
+    "number": 12,
+    "setting": "Чайная как место встречи",
+    "summary": "Плоская печатная иллюстрация, васи, индиго, шалфей и хурма.",
+    "tag": "Тёплый",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "13-surreal",
+    "title": "Кабинет невозможного",
+    "style": "ORIGINAL ART DIRECTION: playful sophisticated surreal metaphysical theater of knowledge. Dusty lilac, butter yellow, ultramarine and warm ivory; hard graphic shadows. Dreamlike impossible doorways, floating stairs, abstract eye-and-moon shapes and paper-stage architecture. UI geometry distinct: generous arch-topped neutral panels, solid rectangles for inputs, large circular letter markers for answers. Title КАБИНЕТ НЕВОЗМОЖНОГО. An original tiny walking geometric sphere presenter, no identifiable character. Panels themselves extremely clear, calm white/cream text areas with dark type and simple large lilac buttons. Unusual art-school aesthetic, uncanny but welcoming. No puzzle minigames, no Escher copied image, no fantasy brass filigree, no neon. Surreal artwork never covers functional content.",
+    "number": 13,
+    "setting": "Сюрреалистичный театр знаний",
+    "summary": "Невозможные лестницы, арочные панели, лиловый и сливочный.",
+    "tag": "Необычный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "14-polar",
+    "title": "Полярная станция",
+    "style": "ORIGINAL ART DIRECTION: grounded contemporary polar research station / expedition field journal. Frost white, glacier grey, deep ink blue, vivid rescue vermilion accents, soft glacial blue; disciplined utilitarian labels and very clear dark large text. Durable rugged field-document panels, stitched fabric and topographic lines only as subtle border detailing, no orange industrial sci-fi framing. Title ПОЛЯРНАЯ СТАНЦИЯ. Backdrop aurora above snow station and distant mountains, understated hand-painted original arctic weather balloon as narrator icon. Mobile feels a robust expedition notebook; flat mostly white panels, red CTA, warm human little participant portraits. No survival temperature/oxygen/resources mechanics. Not military, no weapons, no space craft. Crisp refreshing atmosphere and quieter measured hierarchy.",
+    "number": 14,
+    "setting": "Полярная экспедиция",
+    "summary": "Полевые блокноты, топографика, ледяной белый и спасательный красный.",
+    "tag": "Тактильный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "15-pixel",
+    "title": "Квиз-картридж",
+    "style": "ORIGINAL ART DIRECTION: sophisticated cheerful 1990s 16-bit home-computer party game, original pixel art. Crisp intentionally stepped pixel borders and pixel illustrations with integer scale look, NO blur. Warm pale yellow base, deep aubergine outlines, coral and grass-green highlights, small sky-blue. Title КВИЗ-КАРТРИДЖ. Character portraits are original tiny pixel people; narrator a small friendly pixel CRT face. Lobby has retro window chrome and big simple square tiles, question a generous flat light panel with 2x2 very large answer buttons. Mobile typography uses highly readable Cyrillic bitmap-style or clean sans, NOT illegible tiny pixels. No gamepad HUD, no lives, coins, powerups, platforms or platformer level. Modern usability inside a genuine pixel visual identity. No physical console product mockup.",
+    "number": 15,
+    "setting": "Ретро-компьютерный клуб",
+    "summary": "Пиксельные рамки, портреты и иконки, тёплая палитра 16-bit.",
+    "tag": "Необычный",
+    "batch": "Новые идеи"
+  },
+  {
+    "id": "16-train",
+    "title": "Ночной экспресс",
+    "style": "ORIGINAL ART DIRECTION: elegant art deco night train salon, a traveling club of curious passengers. Deep bottle green, burgundy, champagne ivory, brass fine geometry; geometric fan motifs used in corners only. Title НОЧНОЙ ЭКСПРЕСС in refined geometric Cyrillic display type; all body text clean and large. Lobby resembles a passenger seating manifest within a luxurious train lounge, eight player slots; shared question on an illuminated cream reading panel, NOT timetable dense text. Original understated conductor woman narrator with abstract monogram pin; passing moonlit landscape outside windows. Mobile looks like a beautiful modern printed travel folio with large burgundy CTA and restrained brass rules. No travel route selection, ticket purchases, resource counters or invented transport mechanics. Not fantasy scroll, not steampunk cog clutter.",
+    "number": 16,
+    "setting": "Салон ночного поезда",
+    "summary": "Ар-деко, бутылочный зелёный, бордовые кнопки и латунная геометрия.",
+    "tag": "Атмосферный",
+    "batch": "Новые идеи"
+  }
+]
