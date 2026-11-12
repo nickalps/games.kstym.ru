@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Выбери концепцию викторины</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="concepts.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- ОСНОВНОЙ ЭКРАН ТУРНИРА -->
+  <main class="app-container">
+    <section id="screen-quiz" class="screen">
+      <header class="quiz-header">
+        <h1 class="main-title">ВЫБЕРИ, КАКОЙ ВАРИАНТ НРАВИТСЯ БОЛЬШЕ</h1>
+        
+        <div class="progress-section">
+          <div class="progress-meta">
+            <span id="progress-text" class="progress-text">Вопрос 1 из 15</span>
+            <span id="remain-text" class="remain-text">Осталось: 15</span>
+          </div>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <button type="button" id="btn-back" class="btn btn-secondary btn-sm" disabled>
+            ← Назад
+          </button>
+        </div>
+      </header>
+
+      <!-- ДВА ВАРИАНТА ДЛЯ ВЫБОРА -->
+      <div class="arena" id="arena">
+        <!-- Вариант 1 -->
+        <article class="concept-card" id="card-left">
+          <div class="card-header">
+            <h2 class="concept-title" id="title-left">...</h2>
+          </div>
+          <div class="media-box" id="media-left">
+            <img id="img-left" src="" alt="Вариант 1" class="concept-img">
+            <span class="zoom-badge">🔍 Увеличить</span>
+          </div>
+          <button type="button" id="btn-pick-left" class="btn btn-pick">
+            Выбрать этот вариант
+          </button>
+        </article>
+
+        <div class="arena-divider" aria-hidden="true">VS</div>
+
+        <!-- Вариант 2 -->
+        <article class="concept-card" id="card-right">
+          <div class="card-header">
+            <h2 class="concept-title" id="title-right">...</h2>
+          </div>
+          <div class="media-box" id="media-right">
+            <img id="img-right" src="" alt="Вариант 2" class="concept-img">
+            <span class="zoom-badge">🔍 Увеличить</span>
+          </div>
+          <button type="button" id="btn-pick-right" class="btn btn-pick">
+            Выбрать этот вариант
+          </button>
+        </article>
+      </div>
+
+      <p class="hint-tap">💡 Нажми на картинку, если хочешь рассмотреть детали экранов поближе</p>
+    </section>
+
+    <!-- ЭКРАН РЕЗУЛЬТАТОВ -->
+    <section id="screen-results" class="screen" hidden>
+      <div class="results-header">
+        <h1 class="results-title">ТВОЙ ВЫБОР ГОТОВ!</h1>
+        <p class="results-sub">Скопируй результат и скинь в лс, чтобы обсудить</p>
+        
+        <div class="results-actions">
+          <button type="button" id="btn-copy" class="btn btn-primary btn-copy">
+            Скопировать результат
+          </button>
+          <button type="button" id="btn-restart" class="btn btn-secondary">
+            Пройти заново
+          </button>
+        </div>
+        <div id="copy-toast" class="copy-toast" hidden>✓ Скопировано в буфер обмена!</div>
+
+        <!-- Запасное поле для ручного копирования -->
+        <div id="fallback-box" class="fallback-box" hidden>
+          <p>Буфер недоступен. Скопируй текст отсюда:</p>
+          <textarea id="fallback-text" rows="8" readonly></textarea>
+        </div>
+      </div>
+
+      <!-- Главный победитель -->
+      <div class="winner-block" id="winner-block"></div>
+
+      <!-- Разъяснение распределения мест -->
+      <p class="results-notice">Концепты, выбывшие в одном раунде, делят места. Турнир определяет победителя, но не точный порядок всех вариантов.</p>
+
+      <!-- Остальные места -->
+      <div class="placements-list" id="placements-list"></div>
+    </section>
+  </main>
+
+  <!-- ПРОСМОТР КАРТИНКИ (LIGHTBOX) -->
+  <div id="lightbox" class="lightbox" hidden>
+    <div class="lightbox-top">
+      <span id="lightbox-title" class="lightbox-title"></span>
+      <div class="lightbox-btns">
+        <button type="button" id="btn-zoom-out" class="btn-ctrl">−</button>
+        <span id="zoom-value" class="zoom-value">100%</span>
+        <button type="button" id="btn-zoom-in" class="btn-ctrl">+</button>
+        <button type="button" id="btn-zoom-reset" class="btn-ctrl">Сброс</button>
+        <button type="button" id="btn-close-lightbox" class="btn-ctrl btn-close">✕ Закрыть</button>
+      </div>
+    </div>
+    <div class="lightbox-viewport" id="lightbox-viewport">
+      <div class="lightbox-stage" id="lightbox-stage">
+        <img id="lightbox-img" src="" alt="Просмотр">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
