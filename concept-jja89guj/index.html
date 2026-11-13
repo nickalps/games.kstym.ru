@@ -11,7 +11,20 @@
 <body>
   <!-- ОСНОВНОЙ ЭКРАН ТУРНИРА -->
   <main class="app-container">
-    <section id="screen-quiz" class="screen">
+    <section id="screen-loading" class="loading-screen" aria-labelledby="loading-title">
+      <div class="loading-card">
+        <h1 id="loading-title">Готовим картинки</h1>
+        <p class="loading-description">Загружаем все варианты, чтобы тест проходил без ожидания.</p>
+        <p id="loading-text" class="loading-text" aria-live="polite">Загрузка 0%</p>
+        <div id="loading-progress" class="progress-bar loading-progress" role="progressbar" aria-label="Загрузка изображений" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div id="loading-fill" class="progress-fill" style="width: 0%"></div>
+        </div>
+        <p id="loading-error" class="loading-error" role="alert" hidden></p>
+        <button type="button" id="btn-retry-loading" class="btn btn-primary loading-retry" hidden>Попробовать снова</button>
+      </div>
+    </section>
+
+    <section id="screen-quiz" class="screen" hidden>
       <header class="quiz-header">
         <h1 class="main-title">ВЫБЕРИ, КАКОЙ ВАРИАНТ НРАВИТСЯ БОЛЬШЕ</h1>
         
