@@ -14,6 +14,12 @@
   let isTransitioning = false;
 
   // DOM элементы
+  const screenLoading = document.getElementById('screen-loading');
+  const loadingText = document.getElementById('loading-text');
+  const loadingProgress = document.getElementById('loading-progress');
+  const loadingFill = document.getElementById('loading-fill');
+  const loadingError = document.getElementById('loading-error');
+  const btnRetryLoading = document.getElementById('btn-retry-loading');
   const screenQuiz = document.getElementById('screen-quiz');
   const screenResults = document.getElementById('screen-results');
 
@@ -60,6 +66,65 @@
   let isDragging = false;
   let startX = 0;
   let startY = 0;
+  // Сохраняем объекты изображений в памяти до конца прохождения теста.
+  let preloadedImages = [];
+
+  function preloadImages() {
+    const urls = [...new Set(CONCEPTS.map(concept => concept.image))];
+    let loaded = 0;
+    let finished = false;
+    let timer;
+    preloadedImages = [];
+    loadingError.hidden = true;
+    btnRetryLoading.hidden = true;
+    loadingText.textContent = 'Загрузка 0%';
+    loadingFill.style.width = '0%';
+    loadingProgress.setAttribute('aria-valuenow', '0');
+
+    function fail(message) {
+      if (finished) return;
+      finished = true;
+      clearTimeout(timer);
+      preloadedImages.forEach(image => { image.onload = null; image.onerror = null; });
+      loadingError.textContent = message;
+      loadingError.hidden = false;
+      btnRetryLoading.hidden = false;
+    }
+
+    function resetTimer() {
+      clearTimeout(timer);
+      timer = setTimeout(() => fail('Изображения загружаются слишком долго. Возможно, есть проблемы с сетью.'), 45000);
+    }
+
+    if (urls.length === 0 || urls.some(url => !url)) {
+      fail('Не удалось подготовить изображения для теста. Попробуйте ещё раз.');
+      return;
+    }
+
+    resetTimer();
+    urls.forEach(url => {
+      const image = new Image();
+      preloadedImages.push(image);
+      image.onload = () => {
+        if (finished) return;
+        loaded++;
+        const percent = Math.round(loaded / urls.length * 100);
+        loadingText.textContent = `Загрузка ${percent}%`;
+        loadingFill.style.width = `${percent}%`;
+        loadingProgress.setAttribute('aria-valuenow', String(percent));
+        if (loaded === urls.length) {
+          finished = true;
+          clearTimeout(timer);
+          screenLoading.hidden = true;
+          initTournament();
+        } else {
+          resetTimer();
+        }
+      };
+      image.onerror = () => fail('Не удалось загрузить изображения. Проверьте подключение к сети и попробуйте снова.');
+      image.src = url;
+    });
+  }
 
   function getConcept(id) {
     return CONCEPTS.find(c => c.id === id) || { id, title: id, image: '' };
@@ -195,12 +260,6 @@
     mediaLeft.onclick = () => openLightbox(cLeft);
     mediaRight.onclick = () => openLightbox(cRight);
 
-    // Предзагрузка следующей пары
-    if (idx + 1 < 15) {
-      const nextM = matches[idx + 1];
-      if (nextM.leftId) { const i = new Image(); i.src = getConcept(nextM.leftId).image; }
-      if (nextM.rightId) { const i = new Image(); i.src = getConcept(nextM.rightId).image; }
-    }
   }
 
   // --- ВЫБОР ВАРИАНТА ---
@@ -480,5 +539,6 @@
   // СТАРТ ПРИ ЗАГРУЗКЕ
   setupLightbox();
   setupEvents();
-  initTournament();
+  btnRetryLoading.onclick = preloadImages;
+  preloadImages();
 })();

@@ -48,6 +48,28 @@ html, body {
   display: none !important;
 }
 
+.loading-screen {
+  min-height: calc(100vh - 60px);
+  display: grid;
+  place-items: center;
+}
+
+.loading-card {
+  width: min(100%, 480px);
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.loading-card h1 { margin: 0 0 8px; font-size: clamp(24px, 4vw, 30px); }
+.loading-description { margin: 0 0 24px; color: var(--text-muted); }
+.loading-text { margin: 0 0 10px; font-weight: 700; }
+.loading-progress { height: 10px; }
+.loading-error { margin: 20px 0 0; color: #fca5a5; }
+.loading-retry { margin-top: 16px; padding: 12px 20px; }
+
 /* ==========================================================================
    ШАПКА И ПРОГРЕСС
    ========================================================================== */
